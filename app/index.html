@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Watching ISS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="iss-location">
+            <div class="coordinates-wrapper">
+                <p class="coordinates-title">ISS is now located at:</p>
+                <p class="coordinates-data"></p>
+            </div>
+            <div id="map"></div>
+        </div>
+        <div class="crew">
+            <div class="date-wrapper">
+                <p class="date-time">Current UTC-time: <time></time></p>
+                <p class="date-day"></p>
+            </div>
+            <ul class="crew-list">
+            </ul>
+            <p class="people-amount"></p>
+        </div>
+    </section>
+    <script src="js/index.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2PYgTtn6LFrIQR1jaBCjXCJV1g6feBT8&callback=initMap"></script>
+</body>
+</html>
